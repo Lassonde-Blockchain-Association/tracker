@@ -32,8 +32,9 @@ function Repositories() {
 							Description:{" "}
 							{repository.description || "No description provided."}
 						</p>
+
 						<a href={repository.url} target="_blank" rel="noopener noreferrer">
-							View Repository
+							View Contributors
 						</a>
 					</div>
 				))}
