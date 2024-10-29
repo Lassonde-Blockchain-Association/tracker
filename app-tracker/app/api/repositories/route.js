@@ -1,6 +1,8 @@
+import axios from 'axios';
+
 export async function GET(request) {
-	const githubApiToken = process.env.GITHUB_API_TOKEN;
-	const githubApiUrl = process.env.GITHUB_API_URL;
+	const GITHUB_API_TOKEN = process.env.GITHUB_API_TOKEN;
+	const GITHUB_API_URL = process.env.GITHUB_API_URL;
 
 
 	try {
