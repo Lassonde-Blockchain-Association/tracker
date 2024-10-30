@@ -1,0 +1,57 @@
+.repositories-container {
+	text-align: center;
+	padding: 20px;
+}
+
+h1 {
+	font-size: 2rem;
+	color: #333;
+	margin-bottom: 20px;
+}
+
+.repositories-list {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 15px;
+}
+
+.repository-card {
+	width: 100%;
+	max-width: 95%;
+	background-color: #f8f9fa;
+	padding: 10px 20px;
+	border-radius: 8px;
+	border: 1px solid #ddd;
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+	text-align: left;
+	transition: transform 0.2s ease-in-out;
+}
+
+.repository-card:hover {
+	transform: scale(1.02);
+	box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.repository-card h2 {
+	font-size: 1.5rem;
+	color: black;
+	margin-bottom: 8px;
+}
+
+.repository-card p {
+	color: #666;
+	margin-bottom: 12px;
+	font-size: 1rem;
+}
+
+.repository-card a {
+	text-decoration: none;
+	color: #007bff;
+	font-weight: bold;
+	transition: color 0.2s ease;
+}
+
+.repository-card a:hover {
+	color: #007bff;
+}
