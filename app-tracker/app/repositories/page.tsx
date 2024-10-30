@@ -1,24 +1,10 @@
 "use client";
-import { useEffect, useState } from "react";
 import "./repositories.css";
 import "../spinner.css";
+import { useRepositories } from "../hooks/useRepositories";
 
 function Repositories() {
-	const [repositories, setRepositories] = useState<any[]>([]);
-	const [loading, setLoading] = useState(true);
-
-	useEffect(() => {
-		fetch("/api/repositories")
-			.then((response) => response.json())
-			.then((data) => {
-				setRepositories(data);
-				setLoading(false);
-			})
-			.catch((error) => {
-				console.error("Error fetching data:", error);
-				setLoading(false);
-			});
-	}, []);
+	const { repositories, loading } = useRepositories();
 
 	return (
 		<div className="repositories-container">
